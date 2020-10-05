@@ -16,4 +16,4 @@ The following list would be the main goals for Shadow Art Generator:
 
 ## Project Citations
 - This project uses the PNG library provided by UBC CPSC 221.
-- This project uses the loedPNG library provided by Lode Vandevenne.
+- This project uses the lodePNG library provided by Lode Vandevenne.
