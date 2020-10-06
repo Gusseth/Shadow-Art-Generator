@@ -139,12 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ShadowGenerator.cpp" />
     <ClCompile Include="png\HSLAPixel.cpp" />
     <ClCompile Include="png\lodepng\lodepng.cpp" />
     <ClCompile Include="png\PNG.cpp" />
     <ClCompile Include="Shadow Art Generator.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ShadowGenerator.h" />
     <ClInclude Include="png\HSLAPixel.h" />
     <ClInclude Include="png\lodepng\lodepng.h" />
     <ClInclude Include="png\PNG.h" />

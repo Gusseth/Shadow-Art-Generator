@@ -33,6 +33,9 @@
     <ClCompile Include="png\PNG.cpp">
       <Filter>Source Files\png</Filter>
     </ClCompile>
+    <ClCompile Include="ShadowGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="png\HSLAPixel.h">
@@ -46,6 +49,9 @@
     </ClInclude>
     <ClInclude Include="png\RGB_HSL.h">
       <Filter>Header Files\png</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowGenerator.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

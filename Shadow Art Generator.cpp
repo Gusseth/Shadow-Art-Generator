@@ -2,10 +2,33 @@
 //
 
 #include <iostream>
+#include <string>
+#include "png/PNG.h"
+#include "ShadowGenerator.h"
+using namespace std;
+using namespace png;
+using namespace SAG;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    bool loop = true;
+    while (loop) {
+        PNG image;
+        string fileName;
+        while (true) {
+            cout << "Please include the file name to be monochromed, (.png only! Include .png in the name): ";
+            cin >> fileName;
+            if (image.readFromFile(fileName)) break;
+            cout << "Invalid file! Try again." << endl;
+        }
+        while (true) {
+            cout << "Would you like to set the threshold value?";
+            cin >> fileName;
+            if (image.readFromFile(fileName)) break;
+        }
+
+        ShadowGenerator* generator = new ShadowGenerator(image);
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
