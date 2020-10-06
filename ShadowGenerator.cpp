@@ -54,14 +54,14 @@ namespace SAG {
 					if (!invert_) {
 						// Under normal mode,
 						p->l = p->l >= threshold_ ? 
-							0 :		// Anything above the threshold is black
-							1.0;	// while anything below is white
+							0 :		// Anything above the threshold is black, the foreground
+							1.0;	// while anything below is white, the background
 					}
 					else {
 						// Under invert mode,
 						p->l = p->l >= threshold_ ? 
-							1.0 :	// Anything above the threshold is white
-							0;		// while anything below is black
+							1.0 :	// Anything above the threshold is white, the foreground
+							0;		// while anything below is black, the background
 					}
 				}
 			}
