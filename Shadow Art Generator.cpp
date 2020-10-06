@@ -26,7 +26,7 @@ int main()
         while (true) {
             cout << "Please include the file name to be monochromed, (.png only! Include .png in the name): " << endl
                 << "File name?: ";
-            cin >> fileName;
+            getline(cin, fileName);
             if (image->readFromFile(fileName)) break;
             cout << "Invalid file! Try again." << endl;
             cin.clear();
@@ -90,6 +90,7 @@ int main()
             exit(0);
         }
         cout << endl << "==== [ IMAGE 2 ] ====" << endl;
+        cin.clear();
     }
 
     return -1;
