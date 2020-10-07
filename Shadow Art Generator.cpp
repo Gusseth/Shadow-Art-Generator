@@ -89,7 +89,7 @@ int main()
             cout << "Quitting...";
             exit(0);
         }
-        cout << endl << "==== [ IMAGE 2 ] ====" << endl;
+        cout << endl << "==== [ NEW IMAGE ] ====" << endl;
         cin.clear();
     }
 
