@@ -1,4 +1,4 @@
-<img src="">
+<img src="https://github.com/Gusseth/Shadow-Art-Generator/blob/main/images/banner.png?raw=true">
 <br>
 
 # SAG: Shadow Art Generator - A Lotus Land Story
