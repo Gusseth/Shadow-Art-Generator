@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Generator.cpp" />
+    <ClCompile Include="Otsu.cpp" />
     <ClCompile Include="ShadowGenerator.cpp" />
     <ClCompile Include="png\HSLAPixel.cpp" />
     <ClCompile Include="png\lodepng\lodepng.cpp" />
@@ -146,6 +148,8 @@
     <ClCompile Include="Shadow Art Generator.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Generator.h" />
+    <ClInclude Include="Otsu.h" />
     <ClInclude Include="ShadowGenerator.h" />
     <ClInclude Include="png\HSLAPixel.h" />
     <ClInclude Include="png\lodepng\lodepng.h" />

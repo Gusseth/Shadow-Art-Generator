@@ -36,6 +36,12 @@
     <ClCompile Include="ShadowGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Otsu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="png\HSLAPixel.h">
@@ -51,6 +57,12 @@
       <Filter>Header Files\png</Filter>
     </ClInclude>
     <ClInclude Include="ShadowGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Otsu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
