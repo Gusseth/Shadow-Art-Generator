@@ -3,6 +3,7 @@
 namespace SAG {
 
 	// Creates a generator with default values
+	/*
 	ShadowGenerator::ShadowGenerator(PNG & image)
 	{
 		image_ = new PNG(image);
@@ -10,7 +11,7 @@ namespace SAG {
 		invert_ = false;
 		alphaThreshold_ = 0.25;
 	}
-
+	*/
 	// Creates a generator with initialized values
 	ShadowGenerator::ShadowGenerator(PNG & image, double threshold, bool invert, double alphaThreshold)
 	{
@@ -19,14 +20,14 @@ namespace SAG {
 		invert_ = invert;
 		alphaThreshold_ = alphaThreshold;
 	}
-
+	/*
 	// Destructor, flushes image_
 	ShadowGenerator::~ShadowGenerator()
 	{
 		delete image_;
 		image_ = NULL;
 	}
-
+	*/
 	// Renders the image_ within the generator
 	void ShadowGenerator::Render()
 	{
