@@ -20,17 +20,17 @@ namespace SAG {
 
 				if (p->a == 0) {
 					// Transparent pixel, make this part of the background
-					invert_ ? p->l = 1 : p->l = 0;
+					invert_ ? p->l = 0 : p->l = 1;
 					p->a = 1;
 					continue;
 				}
 				if (p->l >= threshold / 255.0) {
 					// Pixel is part of the foreground
-					invert_ ? p->l = 1 : p->l = 0;
+					invert_ ? p->l = 0 : p->l = 1;
 				}
 				else {
 					// Pixel is part of the background
-					invert_ ? p->l = 0 : p->l = 1;
+					invert_ ? p->l = 1 : p->l = 0;
 				}
 			}
 		}
