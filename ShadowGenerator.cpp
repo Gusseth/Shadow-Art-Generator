@@ -69,12 +69,6 @@ namespace SAG {
 
 	}
 
-	// Replaces image with image_ data 
-	void ShadowGenerator::RenderToImage(PNG & image)
-	{
-		image = *image_;
-	}
-
 	// Sets the threshold value
 	bool ShadowGenerator::SetThreshold(double threshold)
 	{
@@ -94,15 +88,5 @@ namespace SAG {
 
 	// Returns alpha threshold value
 	double ShadowGenerator::GetAlphaThreshold() { return alphaThreshold_; }
-
-	// Sets the invert value
-	bool ShadowGenerator::SetInvert(bool invert)
-	{
-		invert_ = invert;
-		return true;
-	}
-
-	// Returns invert value
-	bool ShadowGenerator::GetInvert() { return invert_; }
 
 }

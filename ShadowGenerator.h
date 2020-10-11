@@ -2,11 +2,12 @@
 #include <iostream>
 #include <string>
 #include "png/PNG.h"
+#include "Generator.h"
 using namespace std;
 using namespace png;
 
 namespace SAG {
-	class ShadowGenerator
+	class ShadowGenerator : public virtual Generator
 	{
 	public:
 		// Creates a generator with default values
@@ -21,9 +22,6 @@ namespace SAG {
 		// Renders the image_ within the generator
 		void Render();
 
-		// Replaces image with image_ data 
-		void RenderToImage(PNG & image);
-
 		// Sets the threshold value
 		bool SetThreshold(double threshold);
 		double GetThreshold();
@@ -32,13 +30,7 @@ namespace SAG {
 		bool SetAlphaThreshold(double alphaThreshold);
 		double GetAlphaThreshold();
 
-		// Sets the invert value
-		bool SetInvert(bool invert);
-		bool GetInvert();
-
 	private:
-		PNG* image_;
-		bool invert_;
 		double threshold_;
 		double alphaThreshold_;
 	};
