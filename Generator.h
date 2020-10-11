@@ -10,6 +10,14 @@ namespace SAG {
 	class Generator
 	{
 	public:
+		Generator() { image_ = NULL; invert_ = NULL; }
+
+		Generator(PNG& image);
+
+		Generator(PNG& image, bool invert);
+
+		~Generator() { delete image_; image_ = NULL; }
+
 		// Renders the image_ within the generator
 		virtual void Render() {}
 
